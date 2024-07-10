@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Flight Fare Predictor</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <!-- <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center cyan-text">Flight Fare Prediction Web-App</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predicts Flight Fare within seconds
+        <br>
+        </h5>
+      </div>
+     <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+       
+           <div class="input-field col s4">
+           <label for="Source"><b>Source</b></label>
+            <br> 
+          <input list="Source_list" placeholder="Source City" name="Source" id="Source" type="text" class="validate" required="required">
+             <datalist id="Source_list">
+               <option value="Delhi"/>
+                <option value="Kolkata"/>
+                <option value="Mumbai"/>
+               <option value="Chennai"/>
+               <option value="Bangalore"/>
+             </datalist> 
+        
+        </div>
+
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>Destination </b></label>
+            <br>
+         <input list="dest_list" id="last_name" name="Destination" placeholder="Destination City"  type="text" class="validate" required="required"> 
+          <datalist id="dest_list">
+               <option value="Hyderabad"/>
+                <option value="Cochin"/>
+                <option value="Delhi"/>
+               <option value="New Delhi"/>
+               <option value="Bangalore"/>
+               <option value="Kolkata"/>
+              
+             </datalist> 
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>Date and Departure Time</b></label>
+            <br>
+          <input id="_name" name="Date" type="datetime-local" class="validate" required="required">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="third_name"><b>Airline</b></label>
+            <br>
+          <input list="airline_list" placeholder="Airline Preferred" name="Airline" id="third_name" type="text" class="validate" required="required">
+          <datalist id="airline_list">
+            <option value="Jet Airways"/>
+            <option value="IndiGo"/>
+            <option value="Air India"/>
+            <option value="Multiple carriers"/>
+            <option value="SpiceJet"/>
+            <option value="Vistara"/>
+            <option value="Air Asia"/>
+            <option value="GoAir"/>
+            <option value="Multiple carriers Premium economy"/>
+            <option value="Jet Airways Business"/>
+            <option value="Vistara Premium economy"/>
+            <option value="Trujet"/>
+            
+            </datalist> 
+
+        </div>
+        <div class="input-field col s4">
+            <label for="fifth_name"><b>Stops</b></label>
+            <br>
+          <input list="stop_list" placeholder="eg. 0 means NonStop" name="Stops" id="fifth_name" type="text" class="validate" required="required">
+             <datalist id="stop_list">
+               <option value="0">Non-Stop</option>
+                <option value="1"/>
+                <option value="2"/>
+               <option value="3"/>
+               <option value="4"/>
+              
+             </datalist> 
+
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light cyan">Predict Flight Fare</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{ pred }}<br>
+
+    </div>
+  </div>
+
+    <br><br>
+  </div>
+  </div>
+
+    <footer>
+      <div class="footer-copyright">
+        <div class="container">
+          <a class="cyan-text text-lighten-3"><span>&#169;</span> Designed By Rahul </a>
+        </div>
+      </div>
+    </footer>
+   
+
+  </body>
+</html>
