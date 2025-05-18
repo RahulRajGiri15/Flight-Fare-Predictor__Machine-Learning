@@ -1,7 +1,3 @@
-Here’s your updated and polished `README.md` for the **Flight Fare Predictor** project, with your GitHub, LinkedIn, and portfolio links included:
-
----
-
 # ✈️ Flight Fare Predictor (Machine Learning)
 
  Live Demo](https://flight-fare-predictor-machine-learning.onrender.com/)
@@ -38,9 +34,12 @@ This web application predicts flight fares based on various input parameters suc
 
 ---
 
-##  Screenshots *(Optional)*
+##  Screenshots *
 
-> Add some screenshots or demo GIFs here to showcase your app’s interface.
+![Screenshot 2025-05-18 142443](https://github.com/user-attachments/assets/0feaf8e5-0dc4-480e-9125-9e01238a5abb)
+![Screenshot 2025-05-18 142806](https://github.com/user-attachments/assets/289ab773-0a26-486f-bf89-9b6e15e29f6f)
+![Screenshot 2025-05-18 142846](https://github.com/user-attachments/assets/e68228d9-c7c9-4946-b163-7b11447288f4)
+
 
 ---
 
