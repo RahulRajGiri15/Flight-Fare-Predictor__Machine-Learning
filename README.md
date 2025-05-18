@@ -61,16 +61,6 @@ python app.py
 http://127.0.0.1:5000/
 ```
 
----
-
-## 🔗 Useful Links
-
-*  **Live App:** [flight-fare-predictor-machine-learning.onrender.com](https://flight-fare-predictor-machine-learning.onrender.com/)
-*  **GitHub Repo:** [github.com/RahulRajGiri15](https://github.com/RahulRajGiri15/)
-*  **Portfolio:** [rahulkumargiri.vercel.app](https://rahulkumargiri.vercel.app/)
-*  **LinkedIn:** [linkedin.com/in/rahulkumargiri15](https://www.linkedin.com/in/rahulkumargiri15/)
-
----
 
 ##  Author
 
